@@ -1,7 +1,7 @@
-from tests.functional.extension_functions.queries.sql.arithmetic_functions_sql import (
+from tests.functional.queries.sql.arithmetic_functions_sql import (
     SQL_SCALAR, SQL_AGGREGATE
 )
-from tests.functional.extension_functions.queries.ibis_expressions.arithmetic_functions_expr import IBIS_SCALAR
+from tests.functional.queries.ibis_expressions.arithmetic_functions_expr import IBIS_SCALAR
 
 
 SCALAR_FUNCTIONS = (

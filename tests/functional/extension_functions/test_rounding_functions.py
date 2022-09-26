@@ -1,14 +1,12 @@
-from collections.abc import Iterable
-from typing import Callable
+from typing import Callable, Iterable
 
 import duckdb
 import pytest
 from ibis.expr.types.relations import Table
 
-from tests.consumers.acero_consumer import AceroConsumer
-from tests.consumers.duckdb_consumer import DuckDBConsumer
+from tests.consumers import AceroConsumer, DuckDBConsumer
 from tests.functional.common import run_subtrait_on_acero, run_subtrait_on_duckdb
-from tests.functional.extension_functions.testcase_parameters.rounding_tests import (
+from tests.functional.rounding_tests import (
     SCALAR_FUNCTIONS)
 from tests.parametrization import custom_parametrization
 from tests.producers import produce_duckdb_substrait

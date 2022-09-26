@@ -1,4 +1,4 @@
-from tests.functional.extension_functions.queries.sql.boolean_functions_sql import (
+from tests.functional.queries.sql.boolean_functions_sql import (
     SQL_SCALAR, SQL_AGGREGATE
 )
 

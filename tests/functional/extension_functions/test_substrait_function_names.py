@@ -1,16 +1,15 @@
 import json
-from collections.abc import Iterable
-from typing import Callable
+from typing import Callable, Iterable
 
 import duckdb
 import pytest
 from ibis.expr.types.relations import Table
 
-from tests.consumers.duckdb_consumer import DuckDBConsumer
+from tests.consumers import DuckDBConsumer
 from tests.functional.common import check_subtrait_function_names
-from tests.functional.extension_functions.testcase_parameters import (
-    approximation_tests, arithmetic_decimal_tests, arithmetic_tests, boolean_tests,
-    comparison_tests, datetime_tests, logarithmic_tests, rounding_tests, string_tests)
+from tests.functional import arithmetic_tests, rounding_tests, approximation_tests, \
+    arithmetic_decimal_tests, comparison_tests, datetime_tests, boolean_tests, \
+    logarithmic_tests, string_tests
 from tests.parametrization import custom_parametrization
 
 
